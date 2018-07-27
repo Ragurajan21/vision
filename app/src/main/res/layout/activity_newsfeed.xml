@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.anandsurya.vision.newsfeed">
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:fadeScrollbars="true"
+        android:layout_weight="8"
+        android:layout_alignParentTop="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/list_view">
+        <Button
+            android:layout_width="183dp"
+            android:layout_height="250dp"
+            android:text="Play"
+            android:id="@+id/play_button"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            />
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="500dp"
+            android:text="PREVIOUS"
+            android:id="@+id/fetch__button"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" />
+
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:id="@+id/result__button"
+            android:text="Next"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+</RelativeLayout>

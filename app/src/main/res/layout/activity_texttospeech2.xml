@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.anandsurya.vision.texttospeech2">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/speak"
+        android:text="TOUCH"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/talk"
+        android:text="TALK"/>
+</LinearLayout>

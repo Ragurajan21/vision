@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context="com.example.anandsurya.vision.texttospeech">
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fadeScrollbars="true"
+        android:visibility="gone"
+        android:layout_weight="1"></ListView>
+
+
+    <ScrollView
+        android:id="@+id/SCROLLER_ID"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical"
+        android:fillViewport="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/textbox"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_weight="1"></TextView>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:text="READ"
+                android:id="@+id/read_button"
+                android:visibility="visible"/>
+        </RelativeLayout>
+    </ScrollView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="CONVERT"
+        android:visibility="gone"
+        android:id="@+id/add_button"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_weight="0.40">
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:text="PREVIOUS LINE"
+            android:id="@+id/previous_button"
+            android:layout_weight="1"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"
+            android:layout_alignParentLeft="true"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="NEXT LINE/Start"
+            android:layout_weight="1"
+            android:id="@+id/next_button"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Play"
+            android:visibility="gone"
+            android:id="@+id/play_button"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"/>
+    </LinearLayout>
+</LinearLayout>

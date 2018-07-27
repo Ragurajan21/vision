@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.anandsurya.vision">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera.flash" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/eye1234"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/eye1234"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".login" />
+        <activity android:name=".registration" />
+        <activity android:name=".HomeMenu" />
+        <activity android:name=".texttospeech" />
+        <activity android:name=".texttospeech3" />
+        <activity android:name=".texttospeech2" />
+        <activity android:name=".ocr" />
+        <activity android:name=".newsfeed" />
+        <activity android:name=".newsfeed1" />
+        <activity android:name=".result" />
+        <activity android:name=".support" />
+        <activity android:name=".volume" />
+        <activity android:name=".credits" />
+        <activity android:name=".evaluation" />
+        <activity android:name=".evaluation1"></activity>
+    </application>
+
+</manifest>

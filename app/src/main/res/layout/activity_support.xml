@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context="com.example.anandsurya.vision.support"
+    android:weightSum="1">
+
+    <Button
+        android:layout_width="190dp"
+        android:layout_height="150dp"
+        android:text="VOLUME"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/vol"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/credits" />
+    <Button
+        android:layout_width="190dp"
+        android:layout_height="150dp"
+        android:text="USER MANUAL"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/manual"
+        android:layout_weight="0.15"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/credits" />
+
+    <Button
+        android:id="@+id/credits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CREDITS"
+        android:background="@android:color/transparent"
+        android:textColor="@color/colorAccent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
+
